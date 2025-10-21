@@ -53,16 +53,16 @@ const Navbar = () => {
                 <p className="font-bold text-primary">Back</p>
             </div>
             <div className="flex flex-col">
-                <Link onClick={()=>setMenu(false)} to='/' className=' pl-5 py-3'>HOME</Link>
-                <Link onClick={()=>setMenu(false)} to='/collection'className=' pl-5 py-3' >ABOUT</Link>
-                <Link onClick={()=>setMenu(false)} to='/about' className=' pl-5 py-3'>SERVICES</Link>
-                <Link onClick={()=>setMenu(false)} to='/contact' className=' pl-5 py-3'>CONTACT</Link>
+                <Link onClick={()=>setMenu(false)} to='home' smooth={true} duration={500} className=' pl-5 py-3'>HOME</Link>
+                <Link onClick={()=>setMenu(false)} to='about' smooth={true} duration={500}className=' pl-5 py-3' >ABOUT</Link>
+                <Link onClick={()=>setMenu(false)} to='services' smooth={true} duration={500} className=' pl-5 py-3'>SERVICES</Link>
+                <Link onClick={()=>setMenu(false)} to='contact' smooth={true} duration={500} className=' pl-5 py-3'>CONTACT</Link>
             </div>
             <div className='flex gap-8 justify-center mt-4'>
-                <Link className='flex items-center rounded-full bg-primary text-white px-6 py-3 text-sm gap-2'>
+                <NavLink to='tel:01303749086' className='flex items-center rounded-full bg-primary text-white px-6 py-3 text-sm gap-2'>
                 <p>Call the vet</p>
                 <img className='w-4' src={assets.paw} alt="" />
-                </Link>
+                </NavLink>
             </div>
         </div>
     </div>

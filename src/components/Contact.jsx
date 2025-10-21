@@ -21,7 +21,7 @@ const Contact = () => {
       onSubmit={handleSubmit}
       className="flex flex-col items-center text-sm mt-16"
     >
-      <p className="text-primary font-bold pb-2 dynamic-font text-4xl">Contact Us</p>
+      <p className="text-primary font-bold pb-2 dynamic-font text-4xl">contact us</p>
       <h1 className="text-4xl md:text-5xl font-semibold text-slate-700 pb-4 text-center">
         Get in touch with us
       </h1>
