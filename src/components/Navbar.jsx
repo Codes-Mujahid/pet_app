@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-scroll'
 import {assets} from '../assets/assets.js'
 import { AppContext } from '../context/AppContext.jsx'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     
@@ -34,10 +35,10 @@ const Navbar = () => {
             </div>
             <div className='hidden sm:flex gap-8 '>
                 <div className='hidden lg:flex items-center gap-4'><i className="fa-solid fa-phone-volume text-primary text-2xl"></i> <p className='font-medium text-xl'>01303 749 086</p></div>
-                <Link to='tel:01303749086' className='hidden md:flex items-center cursor-pointer rounded-full bg-primary hover:bg-secondary transition-all text-white px-6 py-3 text-sm gap-2'>
+                <NavLink to='tel:01303749086' className='hidden md:flex items-center cursor-pointer rounded-full bg-primary hover:bg-secondary transition-all text-white px-6 py-3 text-sm gap-2'>
                 <p>Call the vet</p>
                 <img className='w-4' src={assets.paw} alt="" />
-                </Link>
+                </NavLink>
             </div>
 
             {/* mobile menu */}
