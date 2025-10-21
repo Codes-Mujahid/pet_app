@@ -1,0 +1,16 @@
+/* fonts always top a rakhte hobe */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff3600;
+  --color-secondary: #122b45;
+  --color-accent: #f59e0b;
+}
+* {
+  font-family: "Outfit", sans-serif;
+}
+.dynamic-font {
+  font-family: "Dancing Script", cursive;
+}
