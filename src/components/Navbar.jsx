@@ -95,7 +95,7 @@ const Navbar = () => {
       <div className={`${scrolled ? 'pt-[110px]' : 'pt-0'}`}></div>
 
       {/* mobile menu nav */}
-      <div className={`absolute overflow-hidden top-0 right-0 bottom-0 transition-all bg-white z-[999] ${menu ? 'w-full' : 'w-0'}`}>
+      <div className={`fixed overflow-hidden top-0 right-0 bottom-0 transition-all bg-white z-[999] ${menu ? 'w-full' : 'w-0'}`}>
         <div onClick={() => setMenu(false)} className="flex items-center gap-2 px-5 py-3">
           <i className="fa-solid fa-arrow-left text-primary"></i>
           <p className="font-bold text-primary">Back</p>
