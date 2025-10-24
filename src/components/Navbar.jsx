@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { assets } from '../assets/assets.js'
 import { AppContext } from '../context/AppContext.jsx'
+import ScrollToTop from './Scroll.jsx'
 
 const Navbar = () => {
 
@@ -56,22 +57,27 @@ const Navbar = () => {
 
         <div className='hidden md:flex gap-8'>
           <NavLink to='/' className='flex flex-col items-center'>
+            <ScrollToTop/>
             <p>Home</p>
             <hr className="w-3/4 border-none bg-primary h-[1.6px] hidden" />
           </NavLink>
           <NavLink to='/about' className='flex flex-col items-center'>
+            <ScrollToTop/>
             <p>About</p>
             <hr className="w-3/4 border-none bg-primary h-[1.6px] hidden" />
           </NavLink>
           <NavLink to='/services' className='flex flex-col items-center'>
+            <ScrollToTop/>
             <p>Services</p>
             <hr className="w-3/4 border-none bg-primary h-[1.6px] hidden" />
           </NavLink>
           <NavLink to='/blogs' className='flex flex-col items-center'>
+            <ScrollToTop/>
             <p>Blogs</p>
             <hr className="w-3/4 border-none bg-primary h-[1.6px] hidden" />
           </NavLink>
           <NavLink to='/contact' className='flex flex-col items-center'>
+            <ScrollToTop/>
             <p>Contact</p>
             <hr className="w-3/4 border-none bg-primary h-[1.6px] hidden" />
           </NavLink>
