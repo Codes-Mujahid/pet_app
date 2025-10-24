@@ -1,11 +1,12 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const About = () => {
+  const isAboutPath= useLocation().pathname.includes('about')
   return (
     <div className='flex flex-col gap-8 mt-16 px-4'>
-      <h1 className='text-4xl text-center text-primary font-bold mb-4 dynamic-font'>about floffy</h1>
+      {isAboutPath? null : ( <h1 className='text-4xl text-center text-primary font-bold mb-4 dynamic-font'>about floffy</h1>)}
       <div className='flex flex-col xl:flex-row gap-16'>
         <div className='w-full xl:w-[50%]'>
           <img className='rounded-4xl shrink-0 mx-auto' src={assets.about} alt="" />
@@ -26,10 +27,10 @@ const About = () => {
             </ul>
           </div>
           <div className='mt-12 md:mt-12 lg:mt-16 xl:mt-20 flex flex-col sm:flex-row items-center gap-12'>
-            <button className='cursor-pointer flex items-center rounded-full bg-primary hover:bg-secondary transition-all text-white px-8 py-4 text-sm gap-2'>
-            <Link to='/about' className='font-medium text-lg'>Read More</Link>
+            {isAboutPath? null : (<Link to='/about' className='cursor-pointer flex items-center rounded-full bg-primary hover:bg-secondary transition-all text-white px-8 py-4 text-sm gap-2'>
+            <p className='font-medium text-lg'>Read More</p>
             <img className='w-8' src={assets.paw} alt="" />
-            </button>
+            </Link>) }
 
             <div className='hidden md:flex items-center gap-4'>
               <div className="w-12 h-12 border border-primary rounded-full flex items-center justify-center">

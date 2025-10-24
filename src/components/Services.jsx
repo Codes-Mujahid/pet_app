@@ -1,13 +1,14 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Services = () => {
+  const isServicePath= useLocation().pathname.includes('services')
   return (
     <div className='mt-30'>
-      <h1 className='text-4xl text-center font-bold dynamic-font text-primary'>
+      {isServicePath? null : ( <h1 className='text-4xl text-center font-bold dynamic-font text-primary'>
         explore best services
-      </h1>
+      </h1>)}
 
       <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 mt-8'>
         
@@ -20,10 +21,10 @@ const Services = () => {
             <p className='text-gray-500 font-light mb-6'>
               Healthy eating significantly boosts overall health and well-being
             </p>
-            <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
+            {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
               Read More
               <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-            </Link>
+            </Link>)}
           </div>
         </div>
 
@@ -37,10 +38,10 @@ const Services = () => {
             <p className='text-gray-500 font-light mb-6'>
               A balanced diet includes a variety of foods from all food groups
             </p>
-            <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
+            {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
               Read More
               <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-            </Link>
+            </Link>)}
           </div>
         </div>
 
@@ -54,10 +55,10 @@ const Services = () => {
             <p className='text-gray-500 font-light mb-6'>
               Complete Maintenance Services for Comfort and Peace of Mind
             </p>
-            <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
+            {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
               Read More
               <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-            </Link>
+            </Link>)}
           </div>
         </div>
 
@@ -70,10 +71,10 @@ const Services = () => {
             <p className='text-gray-500 font-light mb-6'>
               Trusted Handyman Help for All Those Small but Important Home Tasks
             </p>
-            <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
+            {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group'>
               Read More
               <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-            </Link>
+            </Link>)}
           </div>
         </div>
 
@@ -93,50 +94,50 @@ const Services = () => {
                 <img className='w-40 rounded-full' src={assets.categorie_01} alt="" />
                 <h3 className='text-3xl font-medium'>Comprehensive General <br />Health Check</h3>
                 <p className='text-gray-500 font-light'>Complete assessment ensuring overall pet health and early detection</p>
-                <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
+                {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
                   Read More
                   <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-                </Link>
+                </Link>)}
               </div>
 
               <div className='bg-white p-12 rounded-4xl flex flex-col gap-4'>
                 <img className='w-40 rounded-full' src={assets.categorie_02} alt="" />
                 <h3 className='text-3xl font-medium'>Comprehensive General <br />Health Check</h3>
                 <p className='text-gray-500 font-light'>Complete assessment ensuring overall pet health and early detection</p>
-                <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
+                {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
                   Read More
                   <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-                </Link>
+                </Link>)}
               </div>
 
               <div className='bg-white p-12 rounded-4xl flex flex-col gap-4'>
                 <img className='w-40 rounded-full' src={assets.categorie_03} alt="" />
                 <h3 className='text-3xl font-medium'>Comprehensive General <br />Health Check</h3>
                 <p className='text-gray-500 font-light'>Complete assessment ensuring overall pet health and early detection</p>
-                <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
+                {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
                   Read More
                   <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-                </Link>
+                </Link>)}
               </div>
 
               <div className='bg-white p-12 rounded-4xl flex flex-col gap-4'>
                 <img className='w-40 rounded-full' src={assets.categorie_04} alt="" />
                 <h3 className='text-3xl font-medium'>Comprehensive General <br />Health Check</h3>
                 <p className='text-gray-500 font-light'>Complete assessment ensuring overall pet health and early detection</p>
-                <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
+                {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
                   Read More
                   <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-                </Link>
+                </Link>)}
               </div>
 
               <div className='bg-white p-12 rounded-4xl flex flex-col gap-4'>
                 <img className='w-40 rounded-full' src={assets.categorie_01} alt="" />
                 <h3 className='text-3xl font-medium'>Comprehensive General <br />Health Check</h3>
                 <p className='text-gray-500 font-light'>Complete assessment ensuring overall pet health and early detection</p>
-                <Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
+                {isServicePath? null : (<Link to='/services' type="button" className='flex items-center cursor-pointer gap-1 group mt-8'>
                   Read More
                   <i className="fa-solid fa-arrow-right text-primary transform transition-transform duration-300 group-hover:translate-x-1"></i>
-                </Link>
+                </Link>)}
               </div>
 
           </div>

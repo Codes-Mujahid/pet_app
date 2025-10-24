@@ -4,10 +4,10 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { Toaster } from 'react-hot-toast'
-import About from './pages/About'
-import Services from './pages/Services'
+import About from './pages/AboutPage'
+import Services from './pages/ServicePage'
 import Blogs from './pages/Blogs'
-import Contact from './pages/Contact'
+import Contact from './pages/ContactPage'
 
 const App = () => {
   return (

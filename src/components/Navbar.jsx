@@ -92,7 +92,7 @@ const Navbar = () => {
         <img onClick={() => setMenu(!menu)} className='md:hidden w-6 cursor-pointer' src={assets.menu_icon} alt="Menu" />
       </div>
 
-      <div className={`${scrolled ? 'pt-[110px]' : 'pt-0'}`}></div>
+      <div className={`${scrolled ? 'pt-[75px]' : 'pt-0'}`}></div>
 
       {/* mobile menu nav */}
       <div className={`fixed overflow-hidden top-0 right-0 bottom-0 transition-all bg-white z-[999] ${menu ? 'w-full' : 'w-0'}`}>
