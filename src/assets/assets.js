@@ -30,6 +30,8 @@ export const assets = {
   blog_bg
 };
 
+
+
 export const footerLinks = [
   {
     title: "Quick Links",

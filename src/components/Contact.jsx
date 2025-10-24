@@ -17,7 +17,6 @@ const Contact = () => {
 
   return (
     <form
-      id="contact"
       onSubmit={handleSubmit}
       className="flex flex-col items-center text-sm mt-16"
     >
