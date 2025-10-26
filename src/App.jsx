@@ -8,6 +8,7 @@ import About from './pages/AboutPage'
 import Services from './pages/ServicePage'
 import Blogs from './pages/Blogs'
 import Contact from './pages/ContactPage'
+import ServicePageSecondary from './pages/ServicePageSecondary'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/services' element={<Services/>} />
+        <Route path='/services/:id' element={<ServicePageSecondary/>} />
         <Route path='/blogs' element={<Blogs/> } />
         <Route path='/contact' element={<Contact/> } />
       </Routes>

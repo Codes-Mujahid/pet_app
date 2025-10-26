@@ -1,10 +1,10 @@
-import React from 'react'
+
 import Services from '../components/Services'
 import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import Testimonial from '../components/Testimonial'
 import ServiceSecondary from '../components/ServiceSecondary'
-const ServicePage = () => {
+const ServicePageSecondary = () => {
   return (
     <div>
         <div
@@ -35,10 +35,10 @@ const ServicePage = () => {
         </div>
         </div>
 
-        <Services/>
+        <ServiceSecondary/>
         <Testimonial/>
     </div>
   )
 }
 
-export default ServicePage
+export default ServicePageSecondary
